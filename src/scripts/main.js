@@ -318,8 +318,28 @@ window.addEventListener("load", function (e) {
 function createDebugPane() {
   const pane = new Pane();
   pane.addBinding(params, "decay", { min: 0.0, max: 0.99, step: 0.01 });
-  pane.addBinding(params, "sa", { min: 1.0, max: 10.0, step: 0.1 });
-  pane.addBinding(params, "ra", { min: 1.0, max: 10.0, step: 0.1 });
-  pane.addBinding(params, "so", { min: 1.0, max: 20.0, step: 0.1 });
-  pane.addBinding(params, "ss", { min: 0.1, max: 2.0, step: 0.1 });
+  pane.addBinding(params, "sa", {
+    min: 1.0,
+    max: 10.0,
+    step: 0.1,
+    label: "sensor angle",
+  });
+  pane.addBinding(params, "ra", {
+    min: 1.0,
+    max: 10.0,
+    step: 0.1,
+    label: "rotation angle",
+  });
+  pane.addBinding(params, "so", {
+    min: 1.0,
+    max: 20.0,
+    step: 0.1,
+    label: "sensor offset",
+  });
+  pane.addBinding(params, "ss", {
+    min: 0.1,
+    max: 2.0,
+    step: 0.1,
+    label: "sensor size",
+  });
 }
