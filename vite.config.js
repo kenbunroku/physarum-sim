@@ -5,7 +5,7 @@ export default defineConfig(() => {
   return {
     root: "src",
     publicDir: "../public",
-    // base: "/physarum-sim/",
+    base: "/physarum-sim/",
     build: {
       outDir: "../dist",
       emptyOutDir: true,
