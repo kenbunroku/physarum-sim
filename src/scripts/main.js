@@ -340,6 +340,6 @@ function createDebugPane() {
     min: 0.1,
     max: 2.0,
     step: 0.1,
-    label: "sensor size",
+    label: "step size",
   });
 }
